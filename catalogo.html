@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo - Arte Italia</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://use.fontawesome.com/d8805b6d62.js"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="immagini/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="NascondiMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">SU DI NOI</a></li>
+					<li><a href="visite_guidate.html">VISITE GUIDATE</a></li>
+					<li><a href="contattaci.html">CONTATTI</a></li>
+				</ul>
+		</div>
+		<i class="fa fa-bars" onclick="MostraMenu()"></i>
+	</nav>
+	<h1>Catalogo</h1>
+</section>
+
+<style>
+
+#opereDropdown {
+    font-size: 16px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+.left-column {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+    width: 270px;
+    height: 730px;
+}
+
+
+
+.right-column {
+    float: right;
+    width: calc(100% - 350px);
+    padding: 20px;
+    height: 730px;
+    margin-bottom: 120px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.catalog-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.catalog-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+</style>
+
+
+<body>
+
+
+<div class="left-column">
+
+    <select id="opereDropdown">
+        <option value="A - L'Annunciazione">A - L'Annunciazione</option>
+        <option value="B - Il Bacio">B - Il Bacio</option>
+        <option value="C - La Cappella Sistina">C - La Cappella Sistina</option>
+        <option value="D - La Dama con l'ermellino">D - La Dama con l'ermellino</option>
+        <option value="E - Eva">E - Eva</option>
+        <option value="F - Il Fanciullo che scrive">F - Il Fanciullo che scrive</option>
+        <option value="G - Il Giudizio Universale">G - Il Giudizio Universale</option>
+        <option value="I - L'Incredulità">I - L'Incredulità</option>
+        <option value="K - La Kermesse">K - La Kermesse</option>
+        <option value="L - La Primavera">L - La Primavera</option>
+        <option value="M - Madonna del Parto">M - Madonna del Parto</option>
+        <option value="N - Nascita di Adone">N - Nascita di Adone</option>
+        <option value="O - Orfeo ed Euridice">O - Orfeo ed Euridice</option>
+        <option value="P - Pietà">P - Pietà</option>
+        <option value="R - Ritratto di Dama">R - Ritratto di Dama</option>
+        <option value="S - La Scuola di Atene">S - La Scuola di Atene</option>
+        <option value="T - La Trasfigurazione">T - La Trasfigurazione</option>
+        <option value="U - Ultima Cena">U - Ultima Cena</option>
+        <option value="V - Venere Italica">V - Venere Italica</option>
+        <option value="Z - Il Zuccone">Z - Il Zuccone</option>
+    </select>
+</div>
+
+<div class="right-column">
+
+    <div class="catalog">
+
+        <div class="catalog-item" id="A">
+            <img src="immagini/annunciazione.jpg" alt="L'Annunciazione di Leonardo Da Vinci">
+            <h3>L'Annunciazione</h3>
+        </div>
+        <div class="catalog-item" id="B">
+            <img src="immagini/bacio.jpg" alt="Il Bacio di Francesco Hayez">
+            <h3>Il Bacio</h3>
+        </div>
+        <div class="catalog-item" id="C">
+            <img src="immagini/cap_sistina.jpg" alt="La Cappella Sistina di Michelangelo">
+            <h3>La Cappella Sistina</h3>
+        </div>
+        <div class="catalog-item" id="D">
+            <img src="immagini/ermellino_dentro.jpg" alt="La Dama con l'ermellino di Leonardo da Vinci">
+            <h3>La Dama con l'ermellino</h3>
+        </div>
+        <div class="catalog-item" id="E">
+            <img src="immagini/ecce_dentro.jpg" alt="Ecce Homo di Antonello da Messina">
+            <h3>Ecce Homo</h3>
+        </div>
+        <div class="catalog-item" id="F">
+            <img src="immagini/fornarina.jpg" alt="La Fornarina di Raffaello Sanzio">
+            <h3>La Fornarina</h3>
+        </div>
+        <div class="catalog-item" id="G">
+            <img src="immagini/giudizio.jpg" alt="Il Giudizio Universale di Michelangelo Buonarroti">
+            <h3>Il Giudizio Universale</h3>
+        </div>
+        <div class="catalog-item" id="I">
+            <img src="immagini/incredulita.jpg" alt="L'Incredulità di San Tommaso di Caravaggio">
+            <h3>L'Incredulità</h3>
+        </div>
+        <div class="catalog-item" id="K">
+            <img src="immagini/kermesse.jpg" alt="La Kermesse di Francesco Guardi">
+            <h3>La Kermesse</h3>
+        </div>
+        <div class="catalog-item" id="L">
+            <img src="immagini/primavera.jpg" alt="La Primavera di Sandro Botticelli">
+            <h3>La Primavera</h3>
+        </div>
+        <div class="catalog-item" id="M">
+            <img src="immagini/parto.jpg" alt="Madonna del Parto di Piero della Francesca">
+            <h3>Madonna del Parto</h3>
+        </div>
+        <div class="catalog-item" id="N">
+            <img src="immagini/adone.jpg" alt="Nascita di Adone di Luca Giordano">
+            <h3>Nascita di Adone</h3>
+        </div>
+        <div class="catalog-item" id="O">
+            <img src="immagini/orto.jpg" alt="Orazione nell'orto di Andrea Mantegna">
+            <h3>Orazione nell'orto</h3>
+        </div>
+        <div class="catalog-item" id="P">
+            <img src="immagini/pieta.jpg" alt="Pietà di Michelangelo">
+            <h3>Pietà</h3>
+        </div>
+        <div class="catalog-item" id="R">
+            <img src="immagini/ritratto_dama.jpg" alt="Ritratto di Dama di Leonardo da Vinci">
+            <h3>Ritratto di Dama</h3>
+        </div>
+        <div class="catalog-item" id="S">
+            <img src="immagini/scuola.jpg" alt="La Scuola di Atene di Raffaello Sanzio">
+            <h3>La Scuola di Atene</h3>
+        </div>
+        <div class="catalog-item" id="T">
+            <img src="immagini/trasfigurazione.jpg" alt="La Trasfigurazione di Raffaello Sanzio">
+            <h3>La Trasfigurazione</h3>
+        </div>
+        <div class="catalog-item" id="U">
+            <img src="immagini/cena.jpg" alt="Ultima Cena di Leonardo da Vinci">
+            <h3>Ultima Cena</h3>
+        </div>
+        <div class="catalog-item" id="V">
+            <img src="immagini/venere.jpg" alt="Venere Italica di Antonio Canova">
+            <h3>Venere Italica</h3>
+        </div>
+        <div class="catalog-item" id="Z">
+            <img src="immagini/zuccone.jpg" alt="Il Zuccone di Donatello">
+            <h3>Il Zuccone</h3>
+        </div>
+    </div>
+</div>
+
+
+<section class="footer">
+	<h4>Su Di Noi</h4>
+	<p>Per maggiori informazioni e aggiornamenti seguici sui nostri sociali!</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made by Giulia Falzone</p>
+</section>
+
+<!--JavaScript per attivare/disattivare Menu-->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function MostraMenu(){
+		navLinks.style.right = "0";
+	}
+	function NascondiMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>

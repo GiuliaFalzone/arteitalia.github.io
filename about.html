@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Arte Italia</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://use.fontawesome.com/d8805b6d62.js"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="immagini/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="NascondiMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">SU DI NOI</a></li>
+					<li><a href="visite_guidate.html">VISITE GUIDATE</a></li>
+					<li><a href="contattaci.html">CONTATTI</a></li>
+				</ul>
+		</div>
+		<i class="fa fa-bars" onclick="MostraMenu()"></i>
+	</nav>
+	<h1>Su Di Noi</h1>
+</section>
+
+<!-- about us content -->
+
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+			<h1>Cosa propone il Museo</h1>
+			<p>Benvenuti nel nostro Museo, un luogo dove la storia, l'arte e la cultura si fondono per offrire un'esperienza unica ai visitatori. Siamo un museo dedicato alla preservazione e alla valorizzazione del patrimonio artistico e culturale della nostra regione. Attraverso mostre interattive, opere d'arte straordinarie e ricche narrazioni storiche, cerchiamo di trasmettere emozioni, conoscenze e stimolare la curiosita' dei nostri visitatori. Venite a scoprire il fascino dei nostri tesori nascosti e ad immergervi in un viaggio multisensoriale nel passato dell'arte e della cultura. Siamo lieti di accompagnarvi in questa straordinaria avventura!</p>
+			<a href="" class="hero-btn red-btn">ESPLORA</a>
+		</div>
+		<div class="about-col">
+			<img src="immagini/esplora.jpg">
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+	<h4>Su Di Noi</h4>
+	<p>Per maggiori informazioni e aggiornamenti seguici sui nostri sociali!</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made by Giulia Falzone</p>
+</section>
+
+<!--JavaScript per attivare/disattivare Menu-->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function MostraMenu(){
+		navLinks.style.right = "0";
+	}
+	function NascondiMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>

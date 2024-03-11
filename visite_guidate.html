@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale1.0">
+	<title>Arte Italia</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://use.fontawesome.com/d8805b6d62.js"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="immagini/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="NascondiMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">SU DI NOI</a></li>
+					<li><a href="visite_guidate.html">VISITE GUIDATE</a></li>
+					<li><a href="contattaci.html">CONTATTI</a></li>
+				</ul>
+		</div>
+		<i class="fa fa-bars" onclick="MostraMenu()"></i>
+	</nav>
+	<h1>Visite Guidate</h1>
+</section>
+
+<!-- ricerca parole -->
+
+<body>
+    <div class="search-box">
+        <input type="text" class="search-input" placeholder="Cerca...">
+        <button class="search-button">Cerca</button>
+    </div>
+
+    <style>
+    body {
+    font-family: 'Oranienbaum', serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.search-box {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+}
+
+.search-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-button {
+    width: 30%;
+    padding: 10px 15px;
+    border: none;
+    background-color: #1f618d; /* Cambiato il colore di sfondo azzurro */
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    order: 1; /* Cambiato l'ordine del pulsante per posizionarlo a sinistra */
+}
+
+.search-button:hover {
+    background-color: #04569b; /* Cambiato il colore di sfondo azzurro al passaggio del mouse */
+}
+
+.search-input:focus,
+.search-button:focus {
+    border-color: #007bff;
+}
+
+
+    </style>
+</body>
+
+
+<!-- visite guidate -->
+
+<section class="visite-guidate">
+	<h1>Visite guidate</h1>
+	<p>Le visite guidate nel museo offrono ai visitatori un'opportunita' unica di esplorare le ricchezze culturali e storiche esposte all'interno delle gallerie. Un esperto guida del museo accompagna i partecipanti attraverso le diverse sezioni, fornendo informazioni dettagliate sulle opere d'arte, gli artefatti e i reperti in mostra.</p>
+	<div class="row">
+		<div class="course-col">
+			<h3>Benvenuti al Museo</h3>
+			<p>Aperto tutti i giorni. Si invitano i visitatori ad entrare nel museo ed esplorare tutto cio'che ha da offrire. Si potranno trovare informazioni utili sulla storia, le mostre attuali, le attivita' e gli eventi in programma.</p>
+		</div>
+		<div class="course-col">
+			<h3>Il Museo di notte</h3>
+			<p>Aperto venerdi', sabato e domenica, solo la sera. I visitatori potranno esplorare il museo in un ambiente piu' intimo, riservato e affascinante. Sono presenti visite guidate notturne, eventi speciali ed esposizioni che trascendono l'esperienza tradizionale del museo.</p>
+		</div>
+		<div class="course-col">
+			<h3>Museo in famiglia</h3>
+			<p>Aperto sabato e domenica. Il Museo fornisce programmi e attivita' adatte a tutte le eta', spingendo i genitori a portare i propri figli per una giornata di apprendimento e divertimento insieme. Saranno presenti percorsi guidati, laboratori creativi, eventi speciali e materiali didattici pensati per coinvolgere sia i bambini che gli adulti.</p>
+		</div>
+	</div>
+</section>
+
+<!-- highlights -->
+
+<section class="highlights">
+	<h1>Highlights</h1>
+	<p>Le opere più conosciute</p>
+
+	<div class="row">
+		<div class="highlights-col">
+			<img class="highlight-image" src="immagini/david_prova.jpg">
+			<div class="layer">
+				<h3>David, Michelangelo</h3>
+				<a href="david.html">Vai alla pagina</a>
+			</div>
+		</div>
+		<div class="highlights-col">
+			<img class="highlight-image" src="immagini/proserpina.jpeg">
+			<div class="layer">
+				<h3>Ratto di Proserpina, Gian Lorenzo Bernini</h3>
+				<a href="ratto.html">Vai alla pagina</a>
+			</div>
+		</div>
+		<div class="highlights-col">
+			<img class="highlight-image" src="immagini/estasi_santa_teresa.jpeg">
+			<div class="layer">
+				<h3>Estasi di Santa Teresa d'Avila, Gian Lorenzo Bernini</h3>
+				<a href="teresa.html">Vai alla pagina</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- casa -->
+
+<section class="casa">
+	<h1>Il Museo a casa tua</h1>
+	<p>Alcune tra le attivita' che proponiamo</p>
+	<div class="row">
+		<div class="casa-col">
+			<img src="immagini/miti_leggende.png">
+			<h3>MITI E LEGGENDE</h3>
+			<p>Vieni con noi dentro la collezione del Museo per ascoltare le storie dietro alle opere d'arte</p>
+		</div>
+		<div class="casa-col">
+			<img src="immagini/bambini.png">
+			<h3>IL MUSEO PER I BAMBINI</h3>
+			<p>Racconti sui capolavori del Museo</p>
+		</div>
+		<div class="casa-col">
+			<img src="immagini/foto_museo.jpg">
+			<h3>VISITA LE STANZE E LE GALLERIE DEL MUSEO</h3>
+			<p>Scarica l'applicazione!</p>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+	<h4>Su Di Noi</h4>
+	<p>Per maggiori informazioni e aggiornamenti seguici sui nostri sociali!</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made by Giulia Falzone</p>
+</section>
+
+<!--JavaScript per attivare/disattivare Menu-->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function MostraMenu(){
+		navLinks.style.right = "0";
+	}
+	function NascondiMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+</body>
+</html>
