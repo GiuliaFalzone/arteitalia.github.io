@@ -192,6 +192,11 @@ h3{
 	display: block;
 }
 
+.highlights-col:first-child img {
+  width: 343px;
+  height: 550px;
+}
+
 .layer{
 	background: transparent;
 	height: 100%;
